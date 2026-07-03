@@ -1,0 +1,190 @@
+
+ html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: rgba(255, 255, 255, 0.9);
+
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        }
+
+           .navbar {
+            background: rgba(37, 36, 36, 0.95) !important;
+            box-shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
+            border-bottom: 1px solid #e0e0e0;
+            backdrop-filter: blur(4px);
+            color: white;
+        }
+
+        .navbar-brand {
+            color: #fbfdfc !important;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: #e1e1eb !important;
+            font-weight: 500;
+            margin-right: 12px;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #1db954 !important;
+            text-decoration: underline;
+        }
+
+
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-top: 3px solid #ffd700;
+      border-bottom: 3px solid #ffd700;
+      background: linear-gradient(to right, #1a1a1a, #333);
+      padding: 10px 0;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      font-size: 2em;
+      color: #fff;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ff9900;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to   { transform: translateX(-100%); }
+    }
+
+    /* Optional glowing Krishna Flute Icon */
+    .flute-icon {
+      display: inline-block;
+      margin-right: 15px;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #ffdd00;
+      }
+      to {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffbb00;
+      }
+    }
+
+    
+        .hero {
+            padding: 100px 0 80px 0;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Lord_krishna_Janmashtami.jpg') center/cover no-repeat;
+            color: #fff;
+            text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(30, 41, 59, 0.2) 100%);
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            color: #1db954;
+            text-shadow: 0 2px 8px rgba(30, 219, 84, 0.08);
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 18px;
+            padding: 28px 18px;
+            text-align: center;
+            box-shadow: 0 6px 24px rgba(30, 41, 59, 0.08);
+            backdrop-filter: blur(6px);
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 12px 32px rgba(30, 219, 84, 0.12);
+        }
+
+        .stat-card h5 {
+            color: #1db954;
+            font-weight: 600;
+            margin-bottom: 0.7rem;
+        }
+
+        .gallery img {
+            border-radius: 18px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 12px rgba(30, 41, 59, 0.10);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.07);
+            box-shadow: 0 8px 32px rgba(30, 219, 84, 0.18);
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 24px 0;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 1px solid #e0e0e0;
+            color: #1db954;
+            letter-spacing: 1px;
+        }
+
+     
+        .btn-primary {
+            background: linear-gradient(90deg, #1db954 60%, #232323 100%);
+            border: none;
+            border-radius: 24px;
+            padding: 12px 32px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 12px #1db95433;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #1ed760;
+            color: #fff;
+            box-shadow: 0 4px 16px #1db95488;
+        }
+
+        #about {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(6px);
+            border-radius: 18px;
+            padding: 40px 20px;
+        }
+
+        .audio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
